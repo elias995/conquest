@@ -1,0 +1,112 @@
+.bands .row-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bands .row-top h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    font-weight: 400;
+    color: #1B1A17;
+}
+
+.bands .row-top a {
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #444240;
+    text-decoration: none;
+}
+
+.bands .row-top a::after {
+    content:"";
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #C4C0B6;
+}
+
+.bands .band-list {
+    position: relative;
+    margin-top: 50px;
+}
+
+.bands .band-list .prev-btn,
+.bands .band-list .next-btn {
+    position: absolute;
+    top: 50%;
+    width: 12px;
+    height: 23px;
+    border: none;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.bands .band-list .prev-btn {
+    left: -50px;
+    background-image: url(../../img/arrow_left.svg);
+}
+
+.bands .band-list .next-btn {
+    right: -50px;
+    background-image: url(../../img/arrow_right.svg);
+}
+
+.bands .band-list .viewport {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bands .band-list .viewport .band-list-item {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 340px;
+    padding: 20px;
+    border: 1px dashed #636261;
+    background-color: #FDFDFB;
+    box-sizing: border-box;
+    transition-duration: 200ms;
+}
+
+.bands .band-list .viewport .band-list-item:hover {
+    transform: translateY(-5px);
+}
+
+.bands .band-list .viewport .band-list-item .band-info {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+    .bands .band-list .viewport .band-list-item .band-info .band-title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    color: #444240;
+    text-transform: uppercase;
+}
+
+.bands .band-list .viewport .band-list-item .band-info .band-price {
+    display: block;
+    margin-top: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #636261;
+}
+
+.bands .band-list .viewport .band-list-item img {
+    width: 300px;
+    object-fit: contain;
+    object-position: center;
+}

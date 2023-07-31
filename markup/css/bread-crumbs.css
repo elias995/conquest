@@ -1,0 +1,33 @@
+.bread-crumbs .bread-crumbs-list {
+    display: flex;
+}
+
+.bread-crumbs .bread-crumbs-list li:not(:first-child) {
+    position: relative;
+    margin-left: 34px;
+}
+
+.bread-crumbs .bread-crumbs-list li:not(:first-child)::before {
+    content: "";
+    position: absolute;
+    top: calc(50% + 2px);
+    left: -22px;
+    width: 10px;
+    height: 10px;
+    background-image: url(../img/arrow.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    transform: translateY(-50%);
+}
+
+.bread-crumbs .bread-crumbs-list li a {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 500px;
+    color: #BDB9B5;
+}
+
+.bread-crumbs .bread-crumbs-list .active a {
+    color: #555248;
+}

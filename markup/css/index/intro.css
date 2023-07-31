@@ -1,0 +1,121 @@
+.intro {
+    background-color: #FDFDFB;
+}
+
+.intro .container {
+    display: flex;
+    justify-content: center;
+}
+
+.intro .container .col:nth-child(1) {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 503px;
+}
+
+.intro .container .col:nth-child(1) h1 {
+    position: relative;
+    font-family: 'Playfair Display', serif;
+    font-size: 45px;
+    font-weight: 400;
+    color: #1B1A17;
+    line-height: 90%;
+}
+
+.intro .container .col:nth-child(1) h1::before {
+    content: "";
+    position: absolute;
+    top: 25px;
+    left: -60px;;
+    width: 50px;
+    height: 1px;
+    background-color: #8B8371;
+}
+
+.intro .container .col:nth-child(1) h1 span {
+    font-size: 30px;
+}
+
+.intro .container .col:nth-child(1) p {
+    margin-top: 40px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    color: rgba(27, 26, 23, 0.87);
+}
+
+.intro .container .col:nth-child(1) .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 205px;
+    height: 64px;
+    margin-top: 38px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: #444240;
+}
+
+.intro .container .col:nth-child(2) {
+    position: relative;
+    flex-grow: 1;
+    width: 503px;
+}
+
+.intro .container .col:nth-child(2)::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: -200px;
+    z-index: -10;
+    width: 496px;
+    height: 944px;
+    background-image: url(../img/Ellipse.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center bottom;
+}
+
+.intro .col:nth-child(2) span:nth-child(2),
+.intro .col:nth-child(2) span:nth-child(3) {
+    position: absolute;
+    font-family: 'Prata', serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #1B1A17;
+}
+
+.intro .col:nth-child(2) span:nth-child(2) {
+    top: 140px;
+    left: -55px;
+}
+
+.intro .col:nth-child(2) span:nth-child(3) {
+    bottom: 140px;
+    right: 10px;
+}
+
+.intro .col:nth-child(2) span:nth-child(2)::after,
+.intro .col:nth-child(2) span:nth-child(3)::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 50px;
+    height: 1px;
+    background-color: #8B8371;
+    transform: translateY(-50%);
+}
+
+.intro .col:nth-child(2) span:nth-child(2)::after {
+    right: -65px;
+}
+
+.intro .col:nth-child(2) span:nth-child(3)::before {
+    left: -65px;
+}

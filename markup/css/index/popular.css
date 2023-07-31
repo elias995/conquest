@@ -1,0 +1,104 @@
+.popular {
+    padding: var(--section-padding) 0;
+    font-family: 'Playfair Display', serif;
+    background-color: #fff;
+}
+
+.popular .row-top {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.popular .row-top h2 {
+    font-size: 32px;
+    font-weight: 400;
+    color: #1B1A17;
+}
+
+.popular .row-top a {
+    position: absolute;
+    top: calc(50% + 25px);
+    right: 0;
+    font-family: 'Roboto', sans-serif;
+    color: #444240;
+    text-decoration: none;
+    transform: translateY(-50%);
+}
+
+.popular .row-top a::before {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    width: 100%;
+    height: 2px;
+    background-color: #C4C0B6;
+    transform: translateX(-50%);
+}
+
+.popular .product-list {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+}
+
+.popular .product-list .product-item {
+    position: relative;
+    width: 370px;
+    padding: 40px 30px;
+    background-color: #FDFDFB;
+    transition-duration: 200ms;
+}
+
+.popular .product-list .product-item::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 313px;
+    height: 313px;
+    background-image: url(../img/small-ellipse.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    transform: translate(-50%, -50%);
+}
+
+.popular .product-list .product-item:hover {
+    transform: translateY(-10px);
+}
+
+.popular .product-list .product-item .product-title {
+    font-size: 14px;
+    font-weight: 700;
+    color: rgba(27, 26, 23, 0.82);
+    text-transform: uppercase;
+}
+
+.popular .product-list .product-item .product-price {
+    font-family: 'Prata', serif;
+    font-size: 12px;
+    font-weight: 400;
+    color: rgba(27, 26, 23, 0.82);
+}
+
+.popular .product-list .product-item a {
+    position: relative;
+    display: block;
+    padding-left: 35px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #1B1A17;
+}
+
+.popular .product-list .product-item a::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 30px;
+    height: 2px;
+    background-color: #8B8371;
+    transform: translateY(-50%);
+}

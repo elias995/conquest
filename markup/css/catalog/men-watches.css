@@ -1,0 +1,308 @@
+/* .men-watches,
+.men-watches * {
+    border: 1px solid black;
+} */
+
+.men-watches {
+    padding: 50px 0 ;
+    background-color: #fff;
+}
+
+.men-watches .row:nth-child(1) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.men-watches .row:nth-child(1) h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    font-weight: 400;
+    color: #1B1A17;
+}
+
+.men-watches .row:nth-child(1) .sort-wrapper label {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #BDB9B5;
+}
+
+.men-watches .row:nth-child(1) .sort-wrapper select {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #1B1A17;
+}
+
+.men-watches .row:nth-child(2) {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.men-watches .row:nth-child(2) [role=search] {
+    width: 230px;
+}
+
+.men-watches .row:nth-child(2) [role=search] form {
+    display: flex;
+    flex-direction: column;
+}
+
+.men-watches .row:nth-child(2) [role=search] form details:not(:first-child) {
+    margin-top: 30px
+}
+
+.men-watches .row:nth-child(2) [role=search] form details summary {
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: #444240;
+    list-style: none;
+}
+
+.men-watches .row:nth-child(2) [role=search] form details summary::before,
+.men-watches .row:nth-child(2) [role=search] form details summary::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    width: 10px;
+    height: 1px;
+    background-color: #1B1A17;
+}
+
+.men-watches .row:nth-child(2) [role=search] form details summary::before {
+    transform: translateY(-50%) rotate(90deg);
+}
+
+.men-watches .row:nth-child(2) [role=search] form details[open] summary::before {
+    display: none;
+}
+
+.men-watches .row:nth-child(2) [role=search] form details .backline {
+    position: relative;
+    width: 230px;
+    height: 1px;
+    margin-top: 15px;
+    background-color: #D4D4D4;
+}
+
+.men-watches .row:nth-child(2) [role=search] form details .backline .frontline {
+    position: absolute;
+    top: 50%;
+    left: 30px;
+    transform: translateY(-50%);
+    width: 120px;
+    height: 100%;
+    background-color: #1B1A17;
+}
+
+.men-watches .row:nth-child(2) [role=search] form details .backline .left-handle,
+.men-watches .row:nth-child(2) [role=search] form details .backline .right-handle {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 10px;
+    height: 10px;
+    border: 1px solid #1B1A17;
+    border-radius: 100%;
+    background-color: #FFFFFF;
+    cursor: pointer;
+}
+
+.men-watches .row:nth-child(2) [role=search] form details .backline .left-handle {
+    left: -5px;
+}
+
+.men-watches .row:nth-child(2) [role=search] form details .backline .right-handle {
+    right: -5px;
+}
+
+.men-watches .row:nth-child(2) [role=search] form details .backline .price {
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    color: rgba(27, 26, 23, 0.82);
+    transform: translateX(-50%);
+}
+
+.men-watches .row:nth-child(2) [role=search] form details .brand-list {
+    margin-top: 20px;
+}
+
+.men-watches .row:nth-child(2) [role=search] form details .brand-list li {
+    display: flex;
+    align-items: center;
+}
+
+.men-watches .row:nth-child(2) [role=search] form details .brand-list li:not(:first-child) {
+    margin-top: 10px;
+}
+
+.men-watches .row:nth-child(2) [role=search] form details input[type=checkbox] {
+    display: none;
+}
+
+.men-watches .row:nth-child(2) [role=search] form details input[type=checkbox] + label {
+    position: relative;
+    margin-left: 25px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.men-watches .row:nth-child(2) [role=search] form details input[type=checkbox] + label::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -25px;
+    width: 13px;
+    height: 13px;
+    border: 1px solid #909090;
+    transform: translateY(-50%);
+}
+
+.men-watches .row:nth-child(2) [role=search] form details input[type=checkbox]:checked + label::before {
+    content: "\2713";
+    border-color: #6F6E6D;
+    background-color: #6F6E6D;
+}
+
+.men-watches .row:nth-child(2) [role=search] form input[type=reset] {
+    height: 60px;
+    margin-top: 30px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    color: #1D1A1A;
+    text-transform: uppercase;
+    border: 2px solid #E7E0CF;
+    background-color: #E7E0CF;
+    cursor: pointer;
+    transition-duration: 200ms;
+}
+
+.men-watches .row:nth-child(2) [role=search] form input[type=reset]:hover {
+    background: none;
+}
+
+.men-watches .row:nth-child(2) .catalog {
+    display: flex;
+    flex-wrap: wrap;
+    width: 850px;
+    box-sizing: content-box;
+}
+
+.men-watches .row:nth-child(2) .catalog .product-item {
+    position: relative;
+    width: 250px;
+    margin: 21px 0;
+    border: 1px dashed #636261;
+    background-color: #FDFDFB;
+    transition-duration: 200ms;
+}
+
+.men-watches .row:nth-child(2) .catalog .product-item:hover {
+    transform: translateY(-5px);
+}
+
+.men-watches .row:nth-child(2) .catalog .product-item:nth-child(1),
+.men-watches .row:nth-child(2) .catalog .product-item:nth-child(2),
+.men-watches .row:nth-child(2) .catalog .product-item:nth-child(3) {
+    margin-top: 0;
+}
+
+.men-watches .row:nth-child(2) .catalog .product-item:not(:nth-child(3n)) {
+    margin-right: 50px;
+}
+
+.men-watches .row:nth-child(2) .catalog .product-item .product-info {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.men-watches .row:nth-child(2) .catalog .product-item .product-title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    color: #444240;
+    text-transform: uppercase;
+}
+
+.men-watches .row:nth-child(2) .catalog .product-item .product-price {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #636261;
+}
+
+.men-watches .row:nth-child(2) .catalog .product-item .product-actions {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: none;
+}
+
+.men-watches .row:nth-child(2) .catalog .product-item:hover .product-actions {
+    display: flex;
+    align-items: center;
+}
+
+.men-watches .row:nth-child(2) .catalog .product-item .product-actions button {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.men-watches .row:nth-child(2) .catalog .product-item .product-actions .basket-btn {
+    margin-left: 8px;
+}
+
+.men-watches .row:nth-child(2) .col .pagination {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.men-watches .row:nth-child(2) .col .pagination li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.men-watches .row:nth-child(2) .col .pagination li:not(:first-child) {
+    margin-left: 10px;
+}
+
+.men-watches .row:nth-child(2) .col .pagination li a {
+    color: #B6B6B6;
+    text-decoration: none;
+}
+
+.men-watches .row:nth-child(2) .col .pagination .prev a,
+.men-watches .row:nth-child(2) .col .pagination .next a {
+    display: block;
+    width: 15px;
+    height: 15px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.men-watches .row:nth-child(2) .col .pagination .prev a {
+    background-image: url(../../img/arrow_left.svg);
+}
+
+.men-watches .row:nth-child(2) .col .pagination .next a {
+    background-image: url(../../img/arrow_right.svg);
+}
+
+.men-watches .row:nth-child(2) .col .pagination .active a {
+    color: #000;
+}

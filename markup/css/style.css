@@ -1,0 +1,29 @@
+:root {
+    --section-padding: 80px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+main {
+    min-height: calc(100vh - (80px + 275px));
+    padding: 50px 0;
+}
+
+.container {
+    width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0);
+}

@@ -1,0 +1,115 @@
+.gallery {
+    position: relative;
+    padding: var(--section-padding) 0;
+    background-color: #FDFDFB;
+}
+
+.gallery::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* z-index: -10; */
+    width: 500px;
+    height: 100%;
+    background-color: #f7f5ef;
+}
+
+.gallery * {
+    position: relative;
+    z-index: 10;
+}
+
+.gallery .slider {
+    display: flex;
+    justify-content: center;
+}
+
+.gallery .slider .col {
+    width: 521px;
+}
+
+.gallery .slider .col:nth-child(2) {
+    position: relative;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    margin-left: 70px;
+}
+
+.gallery .slider .col:nth-child(2) .slider-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    font-weight: 400;
+    color: #1B1A17;
+}
+
+.gallery .slider .col:nth-child(2) .slider-description {
+    width: 376px;
+    margin-top: 32px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #444240;
+}
+
+.gallery .slider .col:nth-child(2) .slider-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 205px;
+    height: 64px;
+    margin-top: 40px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    color: #FFFFFF;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: #D4B098;
+    transition-duration: 200ms;
+}
+
+.gallery .slider .col:nth-child(2) .slider-btn:hover {
+    color: #fff;
+    background-color: #000;
+}
+
+.gallery .row:nth-child(3) {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.gallery .row:nth-child(3) .slider-controls {
+    display: flex;
+    align-items: center;
+    margin-right: 300px;
+}
+
+.gallery .row:nth-child(3) .slider-controls .prev-btn,
+.gallery .row:nth-child(3) .slider-controls .next-btn {
+    width: 20px;
+    height: 20px;
+    border: none;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.gallery .row:nth-child(3) .slider-controls .prev-btn {
+    background-image: url(../img/arrow_left.svg);
+}
+
+.gallery .row:nth-child(3) .slider-controls .next-btn {
+    background-image: url(../img/arrow_right.svg);
+}
+
+.gallery .row:nth-child(3) .slider-controls .current-slide {
+    margin: 0 10px;
+    font-family: 'Prata', serif;
+    font-size: 12px;
+    font-weight: 400;
+    color: #1B1A17;
+}
